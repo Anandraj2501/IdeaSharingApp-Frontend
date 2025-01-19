@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://ideasharingapp-backend.onrender.com/api/v1";
