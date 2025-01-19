@@ -1,10 +1,10 @@
 import axios from "axios";
 import { BACKEND_URL } from "../utils/url";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { userContext } from "../utils/userContext";
 import { useNavigate } from "react-router";
 const useAuth = ()=>{
-    const {setUser,setError,message,setMessage,setIsValidaAccessToken} = useContext(userContext);
+    const {setUser,setError,setMessage,setIsValidaAccessToken} = useContext(userContext);
     const navigate = useNavigate();
 
     const authenticate = async(userData, isLogIn)=>{

@@ -167,7 +167,7 @@ const Analytics = () => {
                 <h2 className="text-xl font-semibold text-gray-800">Selected Ideas</h2>
                 {selectedIdeas.length > 0 ? (
 
-                    <IdeaCards initialIdeas={selectedIdeas} />
+                    <IdeaCards initialIdeas={selectedIdeas} /> 
                 ) : (
                     <p className="text-gray-600 mt-2">Click on a chart to see the ideas.</p>
                 )}

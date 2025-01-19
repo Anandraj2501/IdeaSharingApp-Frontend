@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Modal } from "@mui/material";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
-import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import FileUpload from "../FileUpload/FileUpload";
 import IdeaSubmissionForm from "../IdeaSubmissionForm/IdeaSubmissionForm";
