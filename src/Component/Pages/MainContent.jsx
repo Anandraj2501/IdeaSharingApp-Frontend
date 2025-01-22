@@ -108,7 +108,7 @@ const TruncatedCard = ({ idea, user ,navigateToDiscuss }) => {
                 <div
                     className="rounded-full flex justify-center items-center bg-gray-300 w-8 h-8 hover:bg-gray-200 relative"
                     onClick={(e) => {
-                        e.stopPropagation(); // Prevent parent onClick from being triggered
+                        e.stopPropagation(); // Prevent parent onClick from being triggered3
                         setShowAttachments(!showAttachments);
                     }}
                 >
@@ -167,7 +167,10 @@ const TruncatedCard = ({ idea, user ,navigateToDiscuss }) => {
             {/* Like and Comment */}
             <div className="like-comment mt-4 flex justify-between items-center">
                 <button
-                    onClick={handleLike}
+                    onClick={()=>{
+                        e.stopPropagation();
+                        handleLike;
+                    }}
                     className="flex items-center gap-1"
                 >
                     {hasUserLiked ? (
