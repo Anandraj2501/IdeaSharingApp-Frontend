@@ -167,7 +167,7 @@ const TruncatedCard = ({ idea, user ,navigateToDiscuss }) => {
             {/* Like and Comment */}
             <div className="like-comment mt-4 flex justify-between items-center">
                 <button
-                    onClick={()=>{
+                    onClick={(e)=>{
                         e.stopPropagation();
                         handleLike;
                     }}
