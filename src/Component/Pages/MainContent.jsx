@@ -169,7 +169,7 @@ const TruncatedCard = ({ idea, user ,navigateToDiscuss }) => {
                 <button
                     onClick={(e)=>{
                         e.stopPropagation();
-                        handleLike;
+                        handleLike();
                     }}
                     className="flex items-center gap-1"
                 >
